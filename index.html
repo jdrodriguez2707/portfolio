@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Portafolio web de Johan Rodriguez | Desarrollador Frontend</title>
+    <meta name="description"
+        content="Portafolio web de Johan Rodriguez, Desarrollador Frontend y estudiante de Ingeniería de Software. Experiencia en React, JavaScript, TypeScript, Tailwind, Node.js y SQLite. Apasionado por crear interfaces de usuario modernas de alta calidad que faciliten y embellezcan la vida digital de las personas.">
+    <!-- <meta name="author" content=""> -->
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+     <!-- Java Script
+    ================================================== -->
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+
+</head>
+
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Inicio</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Proyectos</a></li>
+                    <li><a class="smoothscroll" href="#resume">Experiencia</a></li>
+                    <li><a class="smoothscroll" href="#contact">Contacto</a></li>
+                    <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>Johan Rodriguez.</h1>
+
+                    <h3>
+                        <span>Desarrollador frontend</span> y estudiante de <span>ingeniería de software</span>
+                        apasionado por crear interfaces de usuario modernas de alta calidad que faciliten y embellezcan
+                        la vida digital de las personas.
+                        <!-- <a class="smoothscroll" href="#about">start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>. -->
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <!-- <a href="#0"><i class="fab fa-facebook-square" aria-hidden="true"></i></a> -->
+                        <a href="https://github.com/jdrodriguez2707" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/jdrodriguez2707/" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/Johan79854000" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg class="social-icon-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="1em" height="1em"
+                                fill="currentColor">
+                                <path
+                                    d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/johan_rodriguez_dev/" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <!-- <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a> -->
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#portfolio" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill:#000"
+                        viewBox="0 0 24 24">
+                        <path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z" />
+                    </svg>
+                </span>
+                <span class="scroll-text">Deslizar</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>Mis proyectos</h3>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-3 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item folio-item--xervialinks">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/xervialinks-dashboard.png" alt="Screenshot de XerviaLinks Metrics">
+                </a>
+            </div>
+
+            <div class="column folio-item folio-item--transportesjr">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/home-transportes-jr.png" alt="Screenshot de Transportes JR">
+                </a>
+            </div>
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/mokepon.png" alt="Screenshot de Mokepon game">
+                </a>
+            </div>
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/yard-sale.png" alt="Screenshot de Yard Sale">
+                </a>
+            </div>
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/tic-tac-toe.png" alt="Screenshot de Tic Tac Toe">
+                </a>
+            </div>
+
+            <div class="column folio-item folio-item--spiderman2">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="./assets/images/portfolio/spider-man-2-mobile.png" alt="Screenshot de Marvel's Spider-Man 2">
+                </a>
+            </div>
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="./assets/images/portfolio/xervialinks-dashboard.png" alt="Screenshot de XerviaLinks Metrics" />
+
+                <div class="modal-popup__desc">
+                    <h5>XerviaLinks Metrics</h5>
+                    <p>Plataforma de análisis y gestión de alto rendimiento para Google Ad Manager (GAM), que permite el
+                        seguimiento automatizado de ingresos publicitarios, pagos personalizados a trabajadores y
+                        asignación de ingresos por dominio en tiempo real.</p>
+                    <ul class="modal-popup__cat">
+                        <li>React</li>
+                        <li>Vite</li>
+                        <li>TailwindCSS</li>
+                        <li>Radix UI</li>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>SQLite</li>
+                    </ul>
+
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer" class="modal-popup__details">Ver
+                        proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/xervialinks-dashboard" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver
+                        código</a>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="./assets/images/portfolio/home-transportes-jr-modal.png" alt="Screenshot de Transportes JR" />
+
+                <div class="modal-popup__desc">
+                    <h5>Transportes JR</h5>
+                    <p>Aplicación web para gestionar clientes, pagos mensuales y recibos de un servicio de
+                        transporte escolar de forma simple y profesional.</p>
+                    <ul class="modal-popup__cat">
+                        <li>React</li>
+                        <li>Vite</li>
+                        <li>TailwindCSS</li>
+                        <li>Daisy UI</li>
+                        <li>Firebase</li>
+                    </ul>
+
+                    <a href="#" target="_blank" rel="nofollow noopener noreferrer" class="modal-popup__details">Ver
+                        proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/transportes-jr-app" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver
+                        código</a>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="./assets/images/portfolio/mokepon-modal.png" alt="Screenshot de Mokepon Game para el modal" />
+
+                <div class="modal-popup__desc">
+                    <h5>Mokepon Game</h5>
+                    <p>Mokepon es un juego de combate por turnos donde los jugadores pueden elegir a su monstruo mascota
+                        y luchar contra oponentes controlados por la CPU u otros jugadores. El juego se
+                        inspira en populares juegos de batallas de monstruos, pero con su propio toque distintivo.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Canvas API</li>
+                        <li>JavaScript Vanilla</li>
+                        <li>NodeJS</li>
+                    </ul>
+
+                    <a href="https://mokepon-ed1d40aff3a6.herokuapp.com/" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/mokepon-game" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver código</a>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="./assets/images/portfolio/yard-sale-modal.png" alt="Screenshot de Yard Sale para el modal" />
+
+                <div class="modal-popup__desc">
+                    <h5>Yard Sale</h5>
+                    <p>Yard Sale es una aplicación web que permite a los usuarios explorar, añadir productos al carrito
+                        y gestionarlos en una tienda virtual de segunda mano. Está diseñada para simular una experiencia
+                        de compra real con una interfaz intuitiva y un diseño adaptable.</p>
+                    <ul class="modal-popup__cat">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript Vanilla</li>
+                    </ul>
+
+                    <a href="https://jdrodriguez2707.github.io/yard-sale/" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/yard-sale" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver código</a>
+                </div>
+
+
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="./assets/images/portfolio/tic-tac-toe.png" alt="Screenshot de Tic Tac Toe para el modal" />
+
+                <div class="modal-popup__desc">
+                    <h5>Tic Tac Toe Game</h5>
+                    <p>Un clásico juego de tres en raya creado con React y Vite. Juega contra ti mismo o contra un amigo
+                        en la misma pantalla. El juego guarda tu progreso en el almacenamiento local, ¡así que puedes
+                        continuar donde lo dejaste!</p>
+                    <ul class="modal-popup__cat">
+                        <li>React</li>
+                        <li>Vite</li>
+                        <li>LocalStorage</li>
+                    </ul>
+
+                    <a href="https://tic-tac-toe-hazel-omega-26.vercel.app/" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/tic-tac-toe-react" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver código</a>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="./assets/images/portfolio/spiderman-2-modal.png"
+                    alt="Screenshot de Marvel's Spider-Man 2 para el modal" />
+
+                <div class="modal-popup__desc">
+                    <h5>Marvel's Spider-Man 2 Clon</h5>
+                    <p>Clon del sitio web oficial de Marvel's Spider-Man 2, el videojuego de acción y aventura
+                        desarrollado por Insomniac Games y publicado por Sony Interactive Entertainment para PlayStation
+                        5. El objetivo de este proyecto era demostrar los conocimientos adquiridos de HTML y CSS,
+                        aplicando las mejores prácticas de maquetación, diseño responsivo, flexbox, transiciones, etc.
+                    </p>
+                    <ul class="modal-popup__cat">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Flexbox</li>
+                        <li>Transiciones CSS</li>
+                    </ul>
+
+                    <a href="https://jdrodriguez2707.github.io/spider-man-2-clone/" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver proyecto</a>
+                    <a href="https://github.com/jdrodriguez2707/spider-man-2-clone" target="_blank"
+                        rel="nofollow noopener noreferrer" class="modal-popup__details">Ver código</a>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+    </section> <!-- end s-portfolio -->
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Experiencia</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Innovación y Valores Empresariales SAS</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Desarrollador Frontend</span>
+                            <span class="resume-block__header-date">
+                                Noviembre 2021 - Mayo 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Desarrollo de interfaces gráficas para aplicaciones web y móviles con React. Integración de APIs
+                        REST para consumir y mostrar información dinámica en aplicaciones web. Desarrollo y
+                        mantenimiento de landing pages con HTML, CSS y JS.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Tecnologías</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+                    <ul class="resume-tech-list">
+                        <li>
+                            <img src="./assets/images/icons/html5.svg" alt="Logo de HTML5">
+                            <strong>HTML</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/css3.svg" alt="Logo de CSS3">
+                            <strong>CSS</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/javascript.svg" alt="Logo de JavaScript">
+                            <strong>Javascript</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/react.svg" alt="Logo de React">
+                            <strong>React</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/git.svg" alt="Logo de Git">
+                            <strong>Git</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/github.svg" alt="Logo de GitHub">
+                            <strong>GitHub</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/typescript.svg" alt="Logo de TypeScript">
+                            <strong>TypeScript</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/tailwindcss-icon.svg" alt="Logo de Tailwind">
+                            <strong>Tailwind</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/nodejs.svg" alt="Logo de NodeJS">
+                            <strong>NodeJS</strong>
+                        </li>
+                        <li>
+                            <img src="./assets/images/icons/sqlite.svg" alt="Logo de SQLite">
+                            <strong>SQLite</strong>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Contacto</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                    Construyamos algo increíble juntos.
+                    Estoy disponible para nuevas oportunidades laborales, proyectos freelance y colaboraciones. ¡Será un
+                    gusto conversar contigo!
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:johandavid.jdr@gmail.com">johandavid.jdr@gmail.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:johandavid.jdr@gmail.com" class="btn btn--primary h-full-width">Contáctame</a>
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="./mi-CV.pdf" class="btn btn--primary h-full-width" target="_blank"
+                            rel="nofollow noopener noreferrer">Ver CV</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li>
+                        <a href="https://github.com/jdrodriguez2707" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/jdrodriguez2707/" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Johan79854000" target="_blank"
+                            rel="nofollow noopener noreferrer"><svg class="social-icon-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="1.2em" height="1.2em"
+                                fill="currentColor">
+                                <path
+                                    d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z" />
+                            </svg></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/johan_rodriguez_dev/" target="_blank"
+                            rel="nofollow noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Johan Rodriguez <span id="footer-year"></span></span>
+                <span>Diseñado por <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+                </svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+</body>
+
+</html>
